@@ -4,7 +4,7 @@ The repository demonstrates the use of the _K_-Means Algorithm to segment images
 
 `k_means_clustering.py` contains the core implementation of the _K_-Means Algorithm and related objective functions that are useful for studying algorithm performance. It also contains functions that generate a random data set from _K_ Gaussian Distributions with varying means and equal covariance. To see an example of the algorithm running, execute this file, varying the parameter, _k_ in the main if you so desire. The program will display the data set, cluster assignments, and objective function performance.
 
-`image_segmenter.py` contains the functions used to convert an image to a data set of **<R,G,B>** vectors, classify the points, and replace the pixels with associated means for segmentation. To try this on other images apart from the examples in this repository, simply path to the input image and output destination (as demonstrated in the main) and execute this file.
+`image_segmenter.py` contains the functions used to convert an image to a data set of **<R,G,B>** position vectors, classify the points, and replace the pixels with associated means for segmentation. To try this on other images apart from the examples in this repository, simply path to the input image and output destination (as demonstrated in the main) and execute this file.
 
 ## Segmentation Examples
 
