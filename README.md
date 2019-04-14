@@ -8,15 +8,15 @@ The repository demonstrates the use of the _K_-Means Algorithm to segment images
 
 ## Segmentation Examples
 
-### K = 2 Means
+### K = 2 Means:
 ![alt text](./Images/bugatti_segmented_2.jpg?raw=true)
-### K = 3 Means
+### K = 3 Means:
 ![alt text](./Images/bugatti_segmented_3.jpg?raw=true)
-### K = 4 Means
+### K = 4 Means:
 ![alt text](./Images/bugatti_segmented_4.jpg?raw=true)
-### K = 7 Means
+### K = 7 Means:
 ![alt text](./Images/bugatti_segmented_7.jpg?raw=true)
-### K = 10 Means
+### K = 10 Means:
 ![alt text](./Images/bugatti_segmented_10.jpg?raw=true)
-### Original Image
+### Original Image:
 ![alt text](./Images/bugatti.jpg?raw=true)
