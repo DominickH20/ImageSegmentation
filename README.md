@@ -12,14 +12,10 @@ The repository demonstrates the use of the _K_-Means Algorithm to segment images
 ![alt text](./Images/bugatti_segmented_2.jpg?raw=true)
 ### K = 3 Means
 ![alt text](./Images/bugatti_segmented_3.jpg?raw=true)
-
-<img align="left"  src="./Images/bugatti_segmented_2.jpg">
-
 ### K = 4 Means
 ![alt text](./Images/bugatti_segmented_4.jpg?raw=true)
 ### K = 7 Means
 ![alt text](./Images/bugatti_segmented_7.jpg?raw=true)
-
 ### K = 10 Means
 ![alt text](./Images/bugatti_segmented_10.jpg?raw=true)
 ### Original Image
