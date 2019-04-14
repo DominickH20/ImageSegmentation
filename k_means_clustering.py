@@ -26,17 +26,19 @@ def k_means(data,num_clusters,showIter):
             sum = 0
             for n in range(len(data)):
                 sum += r[n][k]*data[n]
-
             #means[k] = np.sum(r[:,k]*data)/np.sum(r[:,k])
             means[k] = sum/np.sum(r[:,k])
+
         if(showIter):print("Iteration: " + str(iterations))
 
     print("Iterations: " + str(iterations) + " --- Objective Function Value: " + str(objective_function(data,means,r)))
     return means, r
 
+#check equality of means - equal once data ceases being classified differently
 def converged(means,old_means):
     return(np.array_equal(means,old_means))
 
+#Function measuring effectiveness of cluster placement - Sum of square distances to assigned means
 def objective_function(data,means,indicators):
     J = 0.0
     for n in range(len(data)):
@@ -44,6 +46,7 @@ def objective_function(data,means,indicators):
             J += indicators[n][k]*(np.linalg.norm(data[n] - means[k]))**2
     return J
 
+#Initialize the k means to k unique points in the data set
 def init_means(data,num_clusters):
     means = np.zeros((num_clusters,len(data[0])))
     for k in range(num_clusters):
@@ -56,6 +59,7 @@ def init_means(data,num_clusters):
 
     return means
 
+#Generate a dataset of points sampled from a variety of normal Distributions
 def generate_dataset(means):
     #import matplotlib.pyplot as plt
     cov = [[1, 0], [0, 1]]
@@ -67,6 +71,7 @@ def generate_dataset(means):
 
     return data
 
+#Plot objective function wrt different choices of K clusters
 def graph_obj_func(plt):
     plt.subplot(1,2,2)
     plt.title("Distortion Measure vs. Cluster Choice")
@@ -79,6 +84,7 @@ def graph_obj_func(plt):
     plt.plot(np.arange(1,8),J,color = 'black')
     plt.show()
 
+#Plot dataset and means, color coding for classification
 def graph_data(plt,distr_means, data, means):
     plt.subplot(1,2,1)
     plt.title("K = " + str(k) + " with " +str(len(distr_means)) + " Distributions")
