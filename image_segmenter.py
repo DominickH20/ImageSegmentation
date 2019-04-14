@@ -44,9 +44,9 @@ def reshape(data, size):
     return img_array
 
 
-
+#MAIN
 if __name__ == '__main__':
-    k=3
+    k=4
     #write_clustered_image("Images/ferrari.jpg","Images/ferrari_segmented_" + str(k)+ ".jpg",k)
     write_clustered_image("Images/bugatti.jpg","Images/bugatti_segmented_" + str(k)+ ".jpg",k)
     #write_clustered_image("Images/tree.jpg","Images/tree_segmented_" + str(k)+ ".jpg",k)
