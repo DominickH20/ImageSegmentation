@@ -48,9 +48,9 @@ def reshape(data, size):
 if __name__ == '__main__':
     k=4
     #write_clustered_image("Images/ferrari.jpg","Images/ferrari_segmented_" + str(k)+ ".jpg",k)
-    write_clustered_image("Images/bugatti.jpg","Images/bugatti_segmented_" + str(k)+ ".jpg",k)
+    #write_clustered_image("Images/bugatti.jpg","Images/bugatti_segmented_" + str(k)+ ".jpg",k)
     #write_clustered_image("Images/tree.jpg","Images/tree_segmented_" + str(k)+ ".jpg",k)
     #write_clustered_image("Images/penguin.jpg","Images/penguin_segmented_" + str(k)+".jpg",k)
     #write_clustered_image("Images/droplets.jpg","Images/droplets_segmented_" + str(k)+".jpg",k)
-    # for k in range(2,8):
-    #     write_clustered_image("Images/plant.jpg","Images/plant_segmented_" + str(k) +".jpg",k)
+    for k in range(2,8):
+        write_clustered_image("Images/highland_park_flowers.jpeg","Images/highland_park_flowers_segmented_" + str(k) +".jpeg",k)
