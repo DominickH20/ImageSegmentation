@@ -9,7 +9,7 @@ The repository demonstrates the use of the _K_-Means Algorithm to segment images
 ## Segmentation Examples
 
 ### K = 2 Means:
-![alt text](./Images/flower_segmented_2.jpg?raw=true)
+![alt text](./Images/bugatti_segmented_2.jpg?raw=true)
 ### K = 3 Means:
 ![alt text](./Images/bugatti_segmented_3.jpg?raw=true)
 ### K = 4 Means:
